@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="screenc" placeholder="0" readonly>
+        <div class="keys" id="frst">
+            <button onclick="removeLastDigit()" class="opkey">&lAarr;</button>
+            <button onclick="clearScreen()" class="opkey">A/C</button>
+        </div>
+        <div class="keys">
+            <button onclick="displayContent('7')" class="key">7</button>
+            <button onclick="displayContent('8')" class="key">8</button>
+            <button onclick="displayContent('9')" class="key">9</button>
+            <button onclick="displayContent('/')" class="opkey">/</button>
+        </div>
+        <div class="keys">
+            <button onclick="displayContent('4')" class="key">4</button>
+            <button onclick="displayContent('5')" class="key">5</button>
+            <button onclick="displayContent('6')" class="key">6</button>
+            <button onclick="displayContent('*')" class="opkey">X</button>
+        </div>
+        <div class="keys">
+            <button onclick="displayContent('1')" class="key">1</button>
+            <button onclick="displayContent('2')" class="key">2</button>
+            <button onclick="displayContent('3')" class="key">3</button>
+            <button onclick="displayContent('-')" class="opkey">-</button>
+        </div>
+        <div class="keys">
+            <button onclick="displayContent('00')" class="key">00</button>
+            <button onclick="displayContent('0')" class="key">0</button>
+            <button onclick="displayContent('+')" class="opkey">+</button>
+            <button onclick="calc()" class="eqkey">=</button>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
